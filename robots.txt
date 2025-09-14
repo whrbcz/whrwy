@@ -1,0 +1,9 @@
+# 注释：告诉所有搜索引擎爬虫以下规则
+User-agent: *
+Disallow: /private/       # 禁止抓取/private/目录下的所有内容
+Disallow: /tmp/           # 禁止抓取/tmp/目录
+Allow: /private/public/   # 允许抓取/private/下的public子目录（优先级高于Disallow）
+Disallow: /example.html   # 禁止抓取单个页面
+
+# 指定网站地图位置（可选，帮助搜索引擎快速发现内容）
+Sitemap: https://whr.netlify.app/sitemap.xml
